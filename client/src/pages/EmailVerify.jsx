@@ -22,7 +22,7 @@ const EmailVerify = () => {
 		const verifyEmailUrl = async () => {
 			try {
 
-				const url = `http://localhost:8080/api/users/${param.id}/verify/${param.token}`;
+				const url = `https://xcc-69w0.onrender.com/api/users/${param.id}/verify/${param.token}`;
 
 				const { data } = await axios.get(url);
 
