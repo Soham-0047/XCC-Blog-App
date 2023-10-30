@@ -29,7 +29,7 @@ const Register = () => {
   const handleSubmit = async(e) =>{
     e.preventDefault();
 		try {
-			const url = "http://localhost:8080/api/users";
+			const url = "https://xcc-69w0.onrender.com/api/users";
 			const { data: res } = await axios.post(url,data)
       // console.log(data);
 			setMsg(res.message);
